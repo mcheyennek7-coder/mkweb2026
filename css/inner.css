@@ -361,7 +361,6 @@
 }
 .book-cover {
   aspect-ratio: 2 / 3;
-  max-height: 320px;
   background: var(--ivory-warm);
   overflow: hidden;
   border-bottom: 1px solid var(--ivory-mid);
@@ -705,7 +704,6 @@
 }
 .book-cover-placeholder {
   aspect-ratio: 2 / 3;
-  max-height: 320px;
   background: var(--ivory-warm);
   display: flex;
   align-items: center;
