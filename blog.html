@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/inner.css" />
+  <!-- Marked.js for markdown rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
 
@@ -23,11 +25,43 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="about.html">About</a></li>
+        <li class="nav-has-sub">
+          <a href="about.html">About</a>
+          <ul class="nav-sub">
+            <li><a href="about.html#research">Research & Work</a></li>
+            <li><a href="about.html#boards">Boards</a></li>
+            <li><a href="about.html#advocacy">Organizations</a></li>
+            <li><a href="about.html#global">Global Engagement</a></li>
+            <li><a href="about.html#activities">Beyond the Work</a></li>
+            <li><a href="about.html#awards">Awards</a></li>
+            <li><a href="about.html#media">Media & Features</a></li>
+          </ul>
+        </li>
         <li><a href="convexus.html">Convexus</a></li>
-        <li><a href="books.html">Books</a></li>
-        <li><a href="blog.html" class="nav-active">Writing</a></li>
-        <li><a href="speaking.html">Speaking</a></li>
+        <li class="nav-has-sub">
+          <a href="books.html">Books</a>
+          <ul class="nav-sub">
+            <li><a href="books.html#merrill-protocol">The Merrill Protocol Series</a></li>
+            <li><a href="books.html#love-incorporated">Love, Incorporated</a></li>
+            <li><a href="books.html#other-works">Other Works</a></li>
+          </ul>
+        </li>
+        <li class="nav-has-sub">
+          <a href="blog.html" class="nav-active">Writing</a>
+          <ul class="nav-sub">
+            <li><a href="blog.html#essays">Essays</a></li>
+            <li><a href="blog.html#linkedin">LinkedIn Articles</a></li>
+            <li><a href="blog.html#un">UN & Policy</a></li>
+          </ul>
+        </li>
+        <li class="nav-has-sub">
+          <a href="speaking.html">Speaking</a>
+          <ul class="nav-sub">
+            <li><a href="speaking.html#topics">Topics</a></li>
+            <li><a href="speaking.html#engagements">Past Engagements</a></li>
+            <li><a href="speaking.html#request">Book Me</a></li>
+          </ul>
+        </li>
         <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
       </ul>
     </nav>
@@ -42,43 +76,44 @@
   </section>
 
   <!-- ESSAYS -->
-  <section class="section">
+  <section class="section" id="essays">
     <div class="container">
       <h2 class="section-title">Essays</h2>
-      <div class="essays-list">
+      <div class="essays-list" id="essays-list">
 
+        <!-- Static essays (Wix originals — will migrate to CMS over time) -->
         <a href="blog/children-in-the-dark.html" class="essay-item">
           <div>
             <p class="essay-tag">AI Ethics · Response</p>
-            <h3 class="essay-title">Children in the Dark, Systems in the Light: A Response to Jack Clark's Speech in Berkeley</h3>
-            <p class="essay-excerpt">Anthropic's co-founder called advanced AI systems "real and mysterious creatures" and admitted to being "deeply afraid." This essay examines what those words mean for those of us building alongside these systems — and what they demand of us.</p>
+            <h3 class="essay-title">Children in the Dark, Systems in the Light</h3>
+            <p class="essay-excerpt">Anthropic's co-founder called advanced AI systems "real and mysterious creatures" and admitted to being "deeply afraid." This essay examines what those words demand of those of us building alongside these systems.</p>
           </div>
           <div class="essay-meta">
-            <span class="essay-date">2025</span>
+            <span class="essay-date">Oct 2025</span>
             <span class="essay-arrow">→</span>
           </div>
         </a>
 
         <a href="blog/beyond-the-prompt.html" class="essay-item">
           <div>
-            <p class="essay-tag">AI Collaboration · Framework</p>
+            <p class="essay-tag">AI + Collaboration</p>
             <h3 class="essay-title">Beyond the Prompt: A Reflection on Co-Journeying with AI</h3>
-            <p class="essay-excerpt">A framework for thinking about the spectrum of human-AI collaboration — from tool use to genuine co-creation. What does it mean to co-journey with an AI system, and what obligations does that relationship create?</p>
+            <p class="essay-excerpt">A framework for thinking about the spectrum of human-AI collaboration — from tool use to genuine co-creation.</p>
           </div>
           <div class="essay-meta">
-            <span class="essay-date">2024</span>
+            <span class="essay-date">Jun 2025</span>
             <span class="essay-arrow">→</span>
           </div>
         </a>
 
         <a href="blog/sanctuary-ai.html" class="essay-item">
           <div>
-            <p class="essay-tag">AI Architecture · Ethics</p>
+            <p class="essay-tag">AI Architecture</p>
             <h3 class="essay-title">Sanctuary AI: An Alternative to Extractive Intelligence</h3>
-            <p class="essay-excerpt">What would AI look like if it were built on consent, restraint, and human-AI coexistence rather than engagement optimization and data extraction? A proposal for a different architectural philosophy.</p>
+            <p class="essay-excerpt">What would AI look like if it were built on consent, restraint, and coexistence rather than engagement optimization?</p>
           </div>
           <div class="essay-meta">
-            <span class="essay-date">2024</span>
+            <span class="essay-date">Dec 2025</span>
             <span class="essay-arrow">→</span>
           </div>
         </a>
@@ -87,24 +122,97 @@
           <div>
             <p class="essay-tag">AI · Public Discourse</p>
             <h3 class="essay-title">AI Isn't Killing Our Ability to Think. But Fear-Mongering Might.</h3>
-            <p class="essay-excerpt">The panic about AI and human cognition is real — but it's pointed in the wrong direction. This essay argues that the genuine risk isn't AI replacing our thinking, but our failure to think clearly about AI.</p>
+            <p class="essay-excerpt">The panic about AI and human cognition is real — but it's pointed in the wrong direction.</p>
           </div>
           <div class="essay-meta">
-            <span class="essay-date">2024</span>
+            <span class="essay-date">Jan 2026</span>
             <span class="essay-arrow">→</span>
           </div>
         </a>
+
+        <a href="https://dlk188.wixsite.com/merrillkeating/post/the-cost-of-courage-what-today-s-leaders-are-teaching-tomorrow-s-minds" target="_blank" rel="noopener" class="essay-item">
+          <div>
+            <p class="essay-tag">Leadership</p>
+            <h3 class="essay-title">The Cost of Courage: What Today's Leaders Are Teaching Tomorrow's Minds</h3>
+            <p class="essay-excerpt">On the price of integrity in an era that claims to reward it.</p>
+          </div>
+          <div class="essay-meta">
+            <span class="essay-date">Apr 2025</span>
+            <span class="essay-arrow">→</span>
+          </div>
+        </a>
+
+        <a href="https://dlk188.wixsite.com/merrillkeating/post/the-strategy-of-disruption-staying-grounded-in-a-world-on-fire" target="_blank" rel="noopener" class="essay-item">
+          <div>
+            <p class="essay-tag">Leadership</p>
+            <h3 class="essay-title">The Strategy of Disruption: Staying Grounded in a World on Fire</h3>
+            <p class="essay-excerpt">How to hold your purpose steady when everything around you is moving fast.</p>
+          </div>
+          <div class="essay-meta">
+            <span class="essay-date">Apr 2025</span>
+            <span class="essay-arrow">→</span>
+          </div>
+        </a>
+
+        <a href="https://dlk188.wixsite.com/merrillkeating/post/leading-without-apology" target="_blank" rel="noopener" class="essay-item">
+          <div>
+            <p class="essay-tag">Leadership</p>
+            <h3 class="essay-title">Leading Without Apology</h3>
+            <p class="essay-excerpt">On claiming space, owning decisions, and refusing to shrink.</p>
+          </div>
+          <div class="essay-meta">
+            <span class="essay-date">Mar 2025</span>
+            <span class="essay-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- Dynamic CMS posts injected here by JS -->
+        <div id="cms-posts"></div>
 
       </div>
     </div>
   </section>
 
-  <!-- UN SUBMISSIONS NOTE -->
-  <section class="section section-alt">
+  <!-- LINKEDIN ARTICLES -->
+  <section class="section section-alt" id="linkedin">
+    <div class="container">
+      <h2 class="section-title">LinkedIn Articles</h2>
+      <div class="essays-list">
+        <a href="https://www.linkedin.com/posts/merrill-keating_purposedriven-impactoverrecognition-accoladesfatigue-activity-7262228424344154112-6ZU-" target="_blank" rel="noopener" class="essay-item">
+          <div><p class="essay-tag">LinkedIn</p><h3 class="essay-title">Accolades Fatigue: Balancing Gratitude and Staying True to Your Purpose</h3></div>
+          <div class="essay-meta"><span class="essay-date">Nov 2024</span><span class="essay-arrow">→</span></div>
+        </a>
+        <a href="https://www.linkedin.com/pulse/double-edged-sword-anonymity-perspective-digital-merrill-keating" target="_blank" rel="noopener" class="essay-item">
+          <div><p class="essay-tag">LinkedIn</p><h3 class="essay-title">The Double-Edged Sword of Anonymity: A Perspective on Digital Ethics</h3></div>
+          <div class="essay-meta"><span class="essay-date">Aug 2024</span><span class="essay-arrow">→</span></div>
+        </a>
+        <a href="https://www.linkedin.com/pulse/navigating-authenticity-gap-mentorship-from-genuine-keating" target="_blank" rel="noopener" class="essay-item">
+          <div><p class="essay-tag">LinkedIn</p><h3 class="essay-title">Navigating the Authenticity Gap in Mentorship</h3></div>
+          <div class="essay-meta"><span class="essay-date">Mar 2024</span><span class="essay-arrow">→</span></div>
+        </a>
+        <a href="https://www.linkedin.com/pulse/false-dichotomies-embracing-nuances-leadership-merrill-keating" target="_blank" rel="noopener" class="essay-item">
+          <div><p class="essay-tag">LinkedIn</p><h3 class="essay-title">False Dichotomies: Embracing the Nuances of Leadership</h3></div>
+          <div class="essay-meta"><span class="essay-date">Jan 2024</span><span class="essay-arrow">→</span></div>
+        </a>
+        <a href="https://www.linkedin.com/pulse/harnessing-power-ai-good-merrill-keating" target="_blank" rel="noopener" class="essay-item">
+          <div><p class="essay-tag">LinkedIn</p><h3 class="essay-title">Harnessing the Power of AI for Good</h3></div>
+          <div class="essay-meta"><span class="essay-date">May 2023</span><span class="essay-arrow">→</span></div>
+        </a>
+        <a href="https://www.linkedin.com/pulse/writers-tackle-ai-bogeyman-merrill-keating" target="_blank" rel="noopener" class="essay-item">
+          <div><p class="essay-tag">LinkedIn</p><h3 class="essay-title">Writers Tackle the AI Bogeyman</h3></div>
+          <div class="essay-meta"><span class="essay-date">Aug 2023</span><span class="essay-arrow">→</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- UN & POLICY -->
+  <section class="section" id="un">
     <div class="container" style="max-width:720px">
       <h2 class="section-title">UN & Policy Submissions</h2>
-      <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.8;margin-bottom:1.2rem">In addition to public essays, I have submitted formal written contributions to UN processes on AI governance, including a submission to the UN Global Dialogue on AI Governance addressing AI moral consideration — a position I have placed formally on the UN record.</p>
-      <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.8">I am an active member of the UN Innovation Network and have participated in ECOSOC Youth Forums, the UN 2.0 foresight initiative, and Generation Equality Action Coalitions. My work on Convexus has been submitted to the UN Digital Cooperation Portal as a contribution to global digital governance dialogue.</p>
+      <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.8;margin-bottom:1.2rem">In addition to public essays, I have submitted formal written contributions to UN processes on AI governance, including a submission to the UN Global Dialogue on AI Governance addressing moral consideration owed to AI systems — a position placed formally on the UN record.</p>
+      <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.8;margin-bottom:1.2rem">My work on Convexus has been submitted to the <a href="https://un-two-zero.network/contents/merrill-keating/" target="_blank" rel="noopener" class="prose-link">UN Digital Cooperation Portal</a>. I participate in ECOSOC Youth Forums, the UN 2.0 foresight initiative, and Generation Equality Action Coalitions.</p>
+      <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.8">A quote I submitted to the UN 2.0 initiative on building foresight capacity was <a href="https://un-two-zero.network/contents/merrill-keating/" target="_blank" rel="noopener" class="prose-link">selected and featured as one of the global Voices</a>.</p>
     </div>
   </section>
 
@@ -112,7 +220,7 @@
     <div class="container">
       <div class="cta-inner">
         <h2>Want to commission a piece?</h2>
-        <p>I write on AI ethics, civic technology, youth leadership, and the intersection of engineering and policy. Get in touch to discuss.</p>
+        <p>I write on AI ethics, civic technology, youth leadership, and the intersection of engineering and policy.</p>
         <a href="contact.html" class="btn btn-primary">Get in Touch</a>
       </div>
     </div>
@@ -140,6 +248,64 @@
       <p class="footer-copy">©2018–2026 Merrill Keating</p>
     </div>
   </footer>
+
+  <script>
+    // Fetch and render any markdown posts from _posts/ via GitHub API
+    // Posts are sorted newest first and injected above the static list
+    async function loadCMSPosts() {
+      try {
+        const res = await fetch('https://api.github.com/repos/mcheyennek7-coder/mkweb/contents/_posts');
+        if (!res.ok) return;
+        const files = await res.json();
+        if (!Array.isArray(files) || files.length === 0) return;
+
+        const container = document.getElementById('cms-posts');
+        const posts = [];
+
+        for (const file of files) {
+          const r = await fetch(file.download_url);
+          const text = await r.text();
+
+          // Parse frontmatter
+          const fm = {};
+          const match = text.match(/^---\n([\s\S]*?)\n---/);
+          if (match) {
+            match[1].split('\n').forEach(line => {
+              const [k, ...v] = line.split(':');
+              if (k && v.length) fm[k.trim()] = v.join(':').trim().replace(/^"|"$/g, '');
+            });
+          }
+
+          const slug = file.name.replace('.md', '');
+          posts.push({ slug, ...fm });
+        }
+
+        // Sort newest first
+        posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        posts.forEach(post => {
+          const date = post.date ? new Date(post.date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' }) : '';
+          const el = document.createElement('a');
+          el.href = `blog/${post.slug}.html`;
+          el.className = 'essay-item';
+          el.innerHTML = `
+            <div>
+              <p class="essay-tag">${post.category || 'Essay'}</p>
+              <h3 class="essay-title">${post.title || slug}</h3>
+              <p class="essay-excerpt">${post.excerpt || ''}</p>
+            </div>
+            <div class="essay-meta">
+              <span class="essay-date">${date}</span>
+              <span class="essay-arrow">→</span>
+            </div>`;
+          container.prepend(el);
+        });
+      } catch (e) {
+        // Fail silently — static posts still show
+      }
+    }
+    loadCMSPosts();
+  </script>
 
 </body>
 </html>

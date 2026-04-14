@@ -22,12 +22,44 @@
       <button class="nav-toggle" aria-label="Open menu" onclick="document.body.classList.toggle('nav-open')">
         <span></span><span></span><span></span>
       </button>
-      <ul class="nav-links">
-        <li><a href="about.html" class="nav-active">About</a></li>
+            <ul class="nav-links">
+        <li class="nav-has-sub">
+          <a href="about.html">About</a>
+          <ul class="nav-sub">
+            <li><a href="about.html#research">Research &amp; Work</a></li>
+            <li><a href="about.html#boards">Boards</a></li>
+            <li><a href="about.html#advocacy">Organizations</a></li>
+            <li><a href="about.html#global">Global Engagement</a></li>
+            <li><a href="about.html#activities">Beyond the Work</a></li>
+            <li><a href="about.html#awards">Awards</a></li>
+            <li><a href="about.html#media">Media &amp; Features</a></li>
+          </ul>
+        </li>
         <li><a href="convexus.html">Convexus</a></li>
-        <li><a href="books.html">Books</a></li>
-        <li><a href="blog.html">Writing</a></li>
-        <li><a href="speaking.html">Speaking</a></li>
+        <li class="nav-has-sub">
+          <a href="books.html">Books</a>
+          <ul class="nav-sub">
+            <li><a href="books.html#merrill-protocol">The Merrill Protocol Series</a></li>
+            <li><a href="books.html#love-incorporated">Love, Incorporated</a></li>
+            <li><a href="books.html#other-works">Other Works</a></li>
+          </ul>
+        </li>
+        <li class="nav-has-sub">
+          <a href="blog.html">Writing</a>
+          <ul class="nav-sub">
+            <li><a href="blog.html#essays">Essays</a></li>
+            <li><a href="blog.html#linkedin">LinkedIn Articles</a></li>
+            <li><a href="blog.html#un">UN &amp; Policy</a></li>
+          </ul>
+        </li>
+        <li class="nav-has-sub">
+          <a href="speaking.html">Speaking</a>
+          <ul class="nav-sub">
+            <li><a href="speaking.html#topics">Topics</a></li>
+            <li><a href="speaking.html#engagements">Past Engagements</a></li>
+            <li><a href="speaking.html#request">Book Me</a></li>
+          </ul>
+        </li>
         <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
       </ul>
     </nav>
@@ -68,11 +100,19 @@
         </div>
         <div class="aside-block">
           <p class="aside-label">Engineering tools</p>
-          <p class="aside-val">SolidWorks · AutoCAD · Inventor · FEA · MATLAB</p>
+          <p class="aside-val">SolidWorks · AutoCAD · Inventor · FEA · Structural & thermal modeling · MATLAB</p>
         </div>
         <div class="aside-block">
           <p class="aside-label">Programming</p>
           <p class="aside-val">Python · C++ · JavaScript · HTML/CSS · Scratch</p>
+        </div>
+        <div class="aside-block">
+          <p class="aside-label">Systems & analysis</p>
+          <p class="aside-val">Sensor integration · Embedded systems · Control systems · Data acquisition · Statistical modeling · Experimental design</p>
+        </div>
+        <div class="aside-block">
+          <p class="aside-label">AI research</p>
+          <p class="aside-val">Iterative dialogue evaluation · Behavioral pattern recognition · Longitudinal AI behavior studies · Constitutional AI exploration</p>
         </div>
         <div class="aside-block">
           <p class="aside-label">Creative & web</p>
@@ -150,26 +190,46 @@
       <h2 class="section-title">Organizations & Initiatives</h2>
       <div class="org-grid">
         <div class="org-card">
+          <div class="org-card-img">
+            <img src="images/orgs/girls-ignited.png" alt="Girls Ignited logo"
+                 onerror="this.parentElement.innerHTML='<div class=\'org-logo-placeholder\'>GI</div>'" />
+          </div>
           <div class="org-header"><h3>Girls Ignited</h3><span class="org-date">2021 – Present</span></div>
           <p class="org-role">Founder</p>
           <p class="tl-body">Platform featuring nominated girls and young women in leadership globally. 226,000+ followers. Nearly 300 young leaders featured. Hosted Changemakers Summit 2022. Evolved from Bainbridge Island Girl Up, founded December 2018.</p>
         </div>
         <div class="org-card">
+          <div class="org-card-img">
+            <img src="images/orgs/power-of-100-girls.png" alt="The Power of 100 Girls logo"
+                 onerror="this.parentElement.innerHTML='<div class=\'org-logo-placeholder\'>TH</div>'" />
+          </div>
           <div class="org-header"><h3>The Power of 100 Girls</h3><span class="org-date">2020 – Present</span></div>
           <p class="org-role">Founder & Executive Director</p>
           <p class="tl-body">Global giving circle providing grants to girls and young women in STEM and leadership. Fiscally sponsored by Hack+ in Silicon Valley. Over $6,000 awarded — grantees include NEST4US (VA), Redefine Z (CA), and Teen Talking Circles.</p>
         </div>
         <div class="org-card">
+          <div class="org-card-img">
+            <img src="images/orgs/tedx-bainbridge-women.png" alt="TEDxBainbridgeIslandWomen logo"
+                 onerror="this.parentElement.innerHTML='<div class=\'org-logo-placeholder\'>TE</div>'" />
+          </div>
           <div class="org-header"><h3>TEDxBainbridgeIslandWomen</h3><span class="org-date">2020</span></div>
           <p class="org-role">Founder, Licensee & Lead Organizer</p>
           <p class="tl-body">Produced an intergenerational event showcasing 8 global and 2 local speakers. Theme: <em>Still We Rise.</em></p>
         </div>
         <div class="org-card">
+          <div class="org-card-img">
+            <img src="images/orgs/tedx-bainbridge-youth.png" alt="TEDxYouth@BainbridgeIsland logo"
+                 onerror="this.parentElement.innerHTML='<div class=\'org-logo-placeholder\'>TE</div>'" />
+          </div>
           <div class="org-header"><h3>TEDxYouth@BainbridgeIsland</h3><span class="org-date">2019 – 2020</span></div>
           <p class="org-role">Founder, Licensee & Lead Organizer</p>
           <p class="tl-body">Six young speakers at Bainbridge Island Museum of Art. Theme: <em>Youth in Action.</em> All six talks approved for the global TEDx YouTube channel.</p>
         </div>
         <div class="org-card">
+          <div class="org-card-img">
+            <img src="images/orgs/west-sound-coderdojo.png" alt="West Sound CoderDojo logo"
+                 onerror="this.parentElement.innerHTML='<div class=\'org-logo-placeholder\'>WE</div>'" />
+          </div>
           <div class="org-header"><h3>West Sound CoderDojo</h3><span class="org-date">2015 – Present</span></div>
           <p class="org-role">Youth Mentor</p>
           <p class="tl-body">Teaching coding and computational thinking since the dojo launched in March 2015. Over a decade across Kitsap County locations, including special Minecraft, Scratch, and AI mini-conference projects.</p>
@@ -185,16 +245,28 @@
           <p class="tl-body">Awards: District Engineering Inspiration Award (2019 & 2020), District Event Winner (2019), Industrial Design Award (2018). Participated in Girls Generation Robotics Competition on leadership and drive teams.</p>
         </div>
         <div class="org-card">
+          <div class="org-card-img">
+            <img src="images/orgs/reinvented-magazine.png" alt="Reinvented Magazine logo"
+                 onerror="this.parentElement.innerHTML='<div class=\'org-logo-placeholder\'>RE</div>'" />
+          </div>
           <div class="org-header"><h3>Reinvented Magazine</h3><span class="org-date">2019 – 2020</span></div>
           <p class="org-role">Operations Team</p>
           <p class="tl-body">Nation's first print STEM magazine by and for women. Joined at 14 as the youngest staff member. Represented at GeekWire Summit and GeekGirlCon 2019.</p>
         </div>
         <div class="org-card">
+          <div class="org-card-img">
+            <img src="images/orgs/stem-for-her.png" alt="STEM for Her logo"
+                 onerror="this.parentElement.innerHTML='<div class=\'org-logo-placeholder\'>ST</div>'" />
+          </div>
           <div class="org-header"><h3>STEM for Her</h3><span class="org-date">2020 – Present</span></div>
           <p class="org-role">Virtual Programming Team & Panelist</p>
           <p class="tl-body">Only West Coast participant on the programming panel. Collaborated on curriculum and programming strategy for girls in STEM.</p>
         </div>
         <div class="org-card">
+          <div class="org-card-img">
+            <img src="images/orgs/bainbridge-girl-up.png" alt="Bainbridge Island Girl Up logo"
+                 onerror="this.parentElement.innerHTML='<div class=\'org-logo-placeholder\'>BA</div>'" />
+          </div>
           <div class="org-header"><h3>Bainbridge Island Girl Up</h3><span class="org-date">2018 – 2021</span></div>
           <p class="org-role">Founder & Chapter Leader</p>
           <p class="tl-body">Founded December 2018. Attended Girl Up Global Leadership Summit (DC, 2019) and lobbied Congress for the Keeping Girls in School Act. Evolved into Girls Ignited in July 2021.</p>

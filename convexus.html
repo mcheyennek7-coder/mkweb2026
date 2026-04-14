@@ -22,12 +22,44 @@
       <button class="nav-toggle" aria-label="Open menu" onclick="document.body.classList.toggle('nav-open')">
         <span></span><span></span><span></span>
       </button>
-      <ul class="nav-links">
-        <li><a href="about.html">About</a></li>
-        <li><a href="convexus.html" class="nav-active">Convexus</a></li>
-        <li><a href="books.html">Books</a></li>
-        <li><a href="blog.html">Writing</a></li>
-        <li><a href="speaking.html">Speaking</a></li>
+            <ul class="nav-links">
+        <li class="nav-has-sub">
+          <a href="about.html">About</a>
+          <ul class="nav-sub">
+            <li><a href="about.html#research">Research &amp; Work</a></li>
+            <li><a href="about.html#boards">Boards</a></li>
+            <li><a href="about.html#advocacy">Organizations</a></li>
+            <li><a href="about.html#global">Global Engagement</a></li>
+            <li><a href="about.html#activities">Beyond the Work</a></li>
+            <li><a href="about.html#awards">Awards</a></li>
+            <li><a href="about.html#media">Media &amp; Features</a></li>
+          </ul>
+        </li>
+        <li><a href="convexus.html">Convexus</a></li>
+        <li class="nav-has-sub">
+          <a href="books.html">Books</a>
+          <ul class="nav-sub">
+            <li><a href="books.html#merrill-protocol">The Merrill Protocol Series</a></li>
+            <li><a href="books.html#love-incorporated">Love, Incorporated</a></li>
+            <li><a href="books.html#other-works">Other Works</a></li>
+          </ul>
+        </li>
+        <li class="nav-has-sub">
+          <a href="blog.html">Writing</a>
+          <ul class="nav-sub">
+            <li><a href="blog.html#essays">Essays</a></li>
+            <li><a href="blog.html#linkedin">LinkedIn Articles</a></li>
+            <li><a href="blog.html#un">UN &amp; Policy</a></li>
+          </ul>
+        </li>
+        <li class="nav-has-sub">
+          <a href="speaking.html">Speaking</a>
+          <ul class="nav-sub">
+            <li><a href="speaking.html#topics">Topics</a></li>
+            <li><a href="speaking.html#engagements">Past Engagements</a></li>
+            <li><a href="speaking.html#request">Book Me</a></li>
+          </ul>
+        </li>
         <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
       </ul>
     </nav>
@@ -37,11 +69,20 @@
   <section class="convexus-hero">
     <div class="container">
       <p class="page-eyebrow">Civic Tech · AI Facilitation</p>
-      <h1 class="page-title" style="max-width:700px">From Dialogue to Impact —<br>at any scale.</h1>
-      <p class="page-subtitle" style="max-width:580px">Convexus is a civic technology platform that transforms fragmented community conversations into collective, accountable action. Built for teams, nonprofits, schools, communities, and governments.</p>
-      <div style="display:flex;gap:1rem;margin-top:2.5rem;flex-wrap:wrap">
-        <a href="https://convexus.us" target="_blank" rel="noopener" class="btn btn-primary">View Live Demo</a>
+      <h1 class="page-title" style="max-width:700px">Infrastructure for<br>Participatory Change.</h1>
+      <p class="page-subtitle" style="max-width:580px">Convexus transforms meaningful dialogue into coordinated action — from dialogue to impact, at any scale. Built for teams, communities, advocacy organizations, and institutions of any size.</p>
+      <p style="font-size:0.8rem;color:rgba(245,200,66,0.8);margin-top:1rem;font-weight:600;letter-spacing:0.04em">Convene. Connect. Act.</p>
+      <div style="display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap">
+        <a href="https://pilot.convexus.us" target="_blank" rel="noopener" class="btn btn-primary">View Live Demo</a>
         <a href="contact.html" class="btn" style="background:rgba(255,255,255,0.1);color:#faf8f4;border:1.5px solid rgba(255,255,255,0.2)">Request Access</a>
+      </div>
+      <div style="display:flex;gap:2rem;margin-top:2.5rem;flex-wrap:wrap">
+        <div style="font-size:0.78rem;color:rgba(250,248,244,0.5)">
+          <span style="color:#f5c842;font-weight:600">✦</span> Selected — Technology Alliance Seattle Investor Showcase 2026
+        </div>
+        <div style="font-size:0.78rem;color:rgba(250,248,244,0.5)">
+          <span style="color:#f5c842;font-weight:600">✦</span> Included — UN Digital Cooperation Portal
+        </div>
       </div>
     </div>
   </section>
@@ -55,6 +96,7 @@
         <p>Digital platforms reward outrage, not resolution. Conversations happen everywhere but lead nowhere. Town halls become shouting matches. Surveys collect dust. Social media fragments into echo chambers. Teams stall in analysis paralysis. And the tools we have — Facebook Groups, Nextdoor, Reddit, Change.org — were never built to move people from talking to doing.</p>
         <p>Convexus addresses the fundamental infrastructure gap: the space between having a conversation and making a decision. It provides structured, AI-facilitated deliberation that honors every voice while moving the group toward something they can actually act on.</p>
         <p>The AI doesn't decide what's right. It surfaces what's emerging — common ground, shared concerns, ideas gaining traction — and helps participants express themselves more clearly. Humans retain full agency over their voice and their vote. The result is not consensus imposed from above, but harvested from below.</p>
+        <p>The live demo at <a href="https://pilot.convexus.us" target="_blank" rel="noopener" class="prose-link">pilot.convexus.us</a> includes eight discussion examples spanning civic, workplace, community, and casual group contexts — showing the full workflow at every scale.</p>
       </div>
       <aside class="prose-aside">
         <div class="aside-block">
@@ -62,18 +104,22 @@
           <p class="aside-val">Live demo · Pilot-ready</p>
         </div>
         <div class="aside-block">
-          <p class="aside-label">Built with</p>
-          <p class="aside-val">React · Vite · Tailwind · Supabase · Claude API</p>
+          <p class="aside-label">Tech stack</p>
+          <p class="aside-val">React · Vite · Tailwind CSS · Supabase · Claude API · Vercel · Cloudflare</p>
         </div>
         <div class="aside-block">
           <p class="aside-label">Use cases</p>
-          <p class="aside-val">Teams · Nonprofits · Schools · Civic orgs · Government bodies</p>
+          <p class="aside-val">Teams · Nonprofits · Schools · Civic orgs · Government bodies · Community groups</p>
         </div>
         <div class="aside-block">
           <p class="aside-label">Co-founders</p>
-          <p class="aside-val">Merrill Keating<br>DK (co-founder)</p>
+          <p class="aside-val">Merrill Keating<br>Doña Keating</p>
         </div>
-        <a href="https://convexus.us" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center">Try the Demo →</a>
+        <div class="aside-block">
+          <p class="aside-label">Advisor</p>
+          <p class="aside-val">Dr. Joseph Williams<br><span style="font-size:0.78rem;color:var(--text-muted)">Former WA Governor adviser · Former Acting Director, State Broadband Office · Former Seattle Director, PNNL</span></p>
+        </div>
+        <a href="https://pilot.convexus.us" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center">Try the Demo →</a>
       </aside>
     </div>
   </section>
@@ -87,23 +133,98 @@
         <div class="phase-card">
           <span class="phase-num">01</span>
           <h3>Explore</h3>
-          <p>Participants contribute perspectives on focused questions. The AI facilitates in real time — when someone expresses frustration, it extracts the underlying concern and suggests constructive reframes, preserving voice while improving dialogue quality. It surfaces ideas gaining traction across the group, so contributions aren't lost in noise.</p>
+          <p>Participants contribute perspectives on focused questions. Bridge — the AI facilitator — works in real time. When someone expresses frustration, it extracts the underlying concern and suggests constructive reframes, preserving voice while improving dialogue quality. It surfaces ideas gaining traction so contributions aren't lost in noise.</p>
         </div>
         <div class="phase-card">
           <span class="phase-num">02</span>
           <h3>Align</h3>
-          <p>The AI synthesizes emerging themes and highlights bridge-building moments — places where participants who disagree nonetheless share underlying concerns. This moves communities from "my opinion vs. yours" toward "what do we actually have in common?" The platform visualizes convergence, making collective priorities visible.</p>
+          <p>Bridge synthesizes emerging themes and highlights bridge-building moments — places where participants who disagree nonetheless share underlying concerns. This moves communities from "my opinion vs. yours" toward "what do we actually have in common?" The platform visualizes convergence, making collective priorities visible to everyone.</p>
         </div>
         <div class="phase-card">
           <span class="phase-num">03</span>
           <h3>Act</h3>
-          <p>The strongest ideas move to structured decision-making. Communities vote on concrete proposals that emerged organically from their own deliberation. The result is legitimate because participants shaped it themselves — not a survey result, not a committee decision, but a genuine collective voice translated into actionable commitment.</p>
+          <p>The strongest ideas move to structured decision-making. Communities vote on concrete proposals that emerged organically from their own deliberation. Built-in action pathways — petitions, events, stakeholder engagement — connect the outcome to the real world. The result is legitimate because participants shaped it themselves.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- DIFFERENTIATION -->
+  <!-- COMING FEATURES -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Coming in Q2–Q3 2026</h2>
+      <p style="color:var(--text-muted);font-size:0.95rem;max-width:600px;margin-bottom:2.5rem">Seven high-impact features in active development — each one deepening the platform's core promise: that collective action should be visible, rewarding, and real.</p>
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="feature-num">1</div>
+          <h3>Live Consensus Meter</h3>
+          <p>A visual dial showing real-time agreement level as discussion progresses. Watch alignment grow from 23% → 67% → 84%. Immediate, visceral feedback that the platform is working.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-num">2</div>
+          <h3>Time-to-Decision Tracking</h3>
+          <p>"This discussion reached consensus in 4 days with 24 participants." A clear ROI story vs. traditional committee timelines — quantifying the platform's value in terms any organization understands.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-num">3</div>
+          <h3>Decision Export Package</h3>
+          <p>One-click export: summary of discussion, key themes, final vote, action items, ownership — ready to drop into a council agenda, board meeting, or team doc. An enterprise-ready signal.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-num">4</div>
+          <h3>Bridge Builder Badges</h3>
+          <p>Recognition for participants whose comments create connection across perspectives. Gamifies constructive behavior without being cheesy — rewarding exactly the behavior we want to see more of.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-num">5</div>
+          <h3>"What Changed My Mind" Moments</h3>
+          <p>Let participants flag when someone else's comment shifted their perspective. Surface these as highlights — proof that the platform creates genuine movement, not just noise.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-num">6</div>
+          <h3>Anonymous Mode</h3>
+          <p>Per-organization setting allowing pseudonymous participation. Disabled by default for government deployments (public records compliance). Enabled optionally for private organizations, nonprofits, and education.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-num">7</div>
+          <h3>Invite-by-Text (SMS)</h3>
+          <p>SMS invites for participants who don't live in email. Critical for true community inclusion — reaching people where they actually are, not where platforms assume they should be.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MODERATION -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Three-layer moderation</h2>
+      <p style="color:var(--text-muted);font-size:0.95rem;max-width:620px;margin-bottom:2.5rem">Moderation at Convexus is about facilitation quality, not censorship intensity. The goal is never to silence — it's to help people be heard.</p>
+      <div class="org-grid">
+        <div class="org-card">
+          <div class="org-header"><h3>AI Layer — Bridge</h3></div>
+          <p class="tl-body">Real-time tone monitoring and constructive reframing. Bridge suggests alternative expressions of strong emotions, highlights emerging consensus, and flags contributions that may derail productive dialogue. Users can always accept, modify, or reject any suggestion.</p>
+        </div>
+        <div class="org-card">
+          <div class="org-header"><h3>Community Layer</h3></div>
+          <p class="tl-body">Participants can vote to temporarily pause disruptive voices. Power stays distributed — the community itself manages its own norms in real time, with democratic accountability that prevents both abuse and silencing.</p>
+        </div>
+        <div class="org-card">
+          <div class="org-header"><h3>Human Oversight</h3></div>
+          <p class="tl-body">Final authority over removals and appeals rests with designated human moderators. AI and community votes inform decisions; they don't make them. Human judgment remains sovereign.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFFERENTIATION TABLE -->
   <section class="section">
     <div class="container">
       <h2 class="section-title">What makes it different</h2>
@@ -119,57 +240,40 @@
           <tr>
             <td>Reddit / Discord</td>
             <td>Conversation-focused, no outcome structure</td>
-            <td>Structured toward outcomes with built-in action pathways</td>
+            <td>Structured toward outcomes with built-in action pathways; AI prevents toxicity without heavy-handed censorship</td>
           </tr>
           <tr>
             <td>Change.org / MoveOn</td>
             <td>Action first, minimal deliberation</td>
-            <td>Builds genuine consensus before action — more durable results</td>
+            <td>Genuine consensus before action — builds sustained engagement beyond single-issue campaigns</td>
           </tr>
           <tr>
             <td>Pol.is / Kialo</td>
             <td>Maps opinions, stops there</td>
-            <td>Facilitates actual organizing; bridges online and in-person</td>
+            <td>Facilitates actual organizing and action; bridges online and in-person engagement</td>
+          </tr>
+          <tr>
+            <td>Slack / Teams</td>
+            <td>Built for work chat, not deliberation</td>
+            <td>Purpose-built workflow that moves talk to decisions</td>
           </tr>
           <tr>
             <td>Facebook / LinkedIn Groups</td>
             <td>Algorithmic manipulation, social networking</td>
-            <td>Purpose-built for civic action with privacy controls</td>
+            <td>Purpose-built for resolution and civic action; no algorithmic manipulation toward engagement over substance</td>
           </tr>
           <tr>
             <td>Nextdoor</td>
-            <td>Hyperlocal but complaint-driven</td>
-            <td>Structured deliberation from complaint to solution</td>
+            <td>Hyperlocal but complaint-driven, no action pathway</td>
+            <td>Structured deliberation that moves from complaint to solution</td>
           </tr>
           <tr>
             <td>Traditional town halls</td>
             <td>Favor those with time, transportation, and confidence</td>
-            <td>Asynchronous participation — shift workers, caregivers, introverts included</td>
+            <td>Asynchronous participation — shift workers, caregivers, and introverts included equally</td>
           </tr>
         </tbody>
       </table>
-    </div>
-  </section>
-
-  <!-- MODERATION -->
-  <section class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">Three-layer moderation</h2>
-      <p style="color:var(--text-muted);font-size:0.95rem;max-width:620px;margin-bottom:2.5rem">Moderation at Convexus is about facilitation quality, not censorship intensity. The goal is never to silence — it's to help people be heard.</p>
-      <div class="org-grid">
-        <div class="org-card">
-          <div class="org-header"><h3>AI Layer</h3></div>
-          <p class="tl-body">Real-time tone monitoring and constructive reframing. The AI suggests alternative expressions of strong emotions, highlights emerging consensus, and flags contributions that may derail productive dialogue. Users can always accept, modify, or reject AI suggestions.</p>
-        </div>
-        <div class="org-card">
-          <div class="org-header"><h3>Community Layer</h3></div>
-          <p class="tl-body">Participants can vote to temporarily pause disruptive voices. This keeps power distributed — the community itself, not an administrator, manages its own norms in real time.</p>
-        </div>
-        <div class="org-card">
-          <div class="org-header"><h3>Human Oversight</h3></div>
-          <p class="tl-body">Final authority over removals and appeals rests with designated human moderators. AI and community votes inform decisions; they don't make them. Human judgment remains sovereign.</p>
-        </div>
-      </div>
     </div>
   </section>
 

@@ -33,13 +33,34 @@ Pure HTML/CSS/JS — no framework, no build step. Hosted on Vercel, DNS via Clou
 
 ## Adding a Blog Post
 
-1. Copy any existing file from `/blog/` as a template
-2. Update the `<title>`, `<meta name="description">`, eyebrow tag, `<h1>`, date, and essay body
-3. Add a link to it in `blog.html` under the essays list
-4. Add it to the Media & Features section in `about.html`
-5. Commit and push — Vercel deploys automatically
+### Option A — Via CMS (recommended)
+1. Go to `merrillkeating.com/admin`
+2. Sign in with your GitHub account
+3. Click **New Blog Post**, fill in fields, write in the visual editor
+4. Click **Publish** — it commits to GitHub, Vercel deploys automatically
 
-> A CMS (Netlify/Decap CMS) can be added later to make this step visual. See `#blog-cms` in issues if that's been set up.
+### Option B — Manually
+1. Copy any `.md` file from `/_posts/` as a template
+2. Update the frontmatter (title, date, category, excerpt)
+3. Write your post body in markdown below the `---`
+4. The `blog.html` page fetches and displays it automatically via the GitHub API
+
+### Migrating a Wix post
+1. Copy the essay text from Wix
+2. Create a new post via the CMS or manually
+3. Update the link in `blog.html` from the Wix URL to the local path
+
+## CMS Setup (one-time)
+
+The CMS uses [Decap CMS](https://decapcms.org/) with GitHub as the backend.
+
+1. Go to [app.netlify.com](https://app.netlify.com) and sign up (free)
+2. Add your site → connect to your GitHub repo
+3. Enable **Identity** and **Git Gateway** in Site Settings
+4. In Identity settings, enable **GitHub** as an external provider
+5. Visit `merrillkeating.com/admin` and sign in with GitHub
+
+The CMS config is in `admin/config.yml`. To add new categories or fields, edit that file.
 
 ## Contact & Speaking Forms
 

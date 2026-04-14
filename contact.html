@@ -21,13 +21,45 @@
       <button class="nav-toggle" aria-label="Open menu" onclick="document.body.classList.toggle('nav-open')">
         <span></span><span></span><span></span>
       </button>
-      <ul class="nav-links">
-        <li><a href="about.html">About</a></li>
+            <ul class="nav-links">
+        <li class="nav-has-sub">
+          <a href="about.html">About</a>
+          <ul class="nav-sub">
+            <li><a href="about.html#research">Research &amp; Work</a></li>
+            <li><a href="about.html#boards">Boards</a></li>
+            <li><a href="about.html#advocacy">Organizations</a></li>
+            <li><a href="about.html#global">Global Engagement</a></li>
+            <li><a href="about.html#activities">Beyond the Work</a></li>
+            <li><a href="about.html#awards">Awards</a></li>
+            <li><a href="about.html#media">Media &amp; Features</a></li>
+          </ul>
+        </li>
         <li><a href="convexus.html">Convexus</a></li>
-        <li><a href="books.html">Books</a></li>
-        <li><a href="blog.html">Writing</a></li>
-        <li><a href="speaking.html">Speaking</a></li>
-        <li><a href="contact.html" class="nav-active nav-cta">Get in Touch</a></li>
+        <li class="nav-has-sub">
+          <a href="books.html">Books</a>
+          <ul class="nav-sub">
+            <li><a href="books.html#merrill-protocol">The Merrill Protocol Series</a></li>
+            <li><a href="books.html#love-incorporated">Love, Incorporated</a></li>
+            <li><a href="books.html#other-works">Other Works</a></li>
+          </ul>
+        </li>
+        <li class="nav-has-sub">
+          <a href="blog.html">Writing</a>
+          <ul class="nav-sub">
+            <li><a href="blog.html#essays">Essays</a></li>
+            <li><a href="blog.html#linkedin">LinkedIn Articles</a></li>
+            <li><a href="blog.html#un">UN &amp; Policy</a></li>
+          </ul>
+        </li>
+        <li class="nav-has-sub">
+          <a href="speaking.html">Speaking</a>
+          <ul class="nav-sub">
+            <li><a href="speaking.html#topics">Topics</a></li>
+            <li><a href="speaking.html#engagements">Past Engagements</a></li>
+            <li><a href="speaking.html#request">Book Me</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
       </ul>
     </nav>
   </header>
@@ -44,7 +76,7 @@
     <div class="container contact-layout">
 
       <div>
-        <form name="contact" method="POST" data-netlify="true">
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
           <div class="form-row">
             <div class="form-group">
               <label>Name <span class="form-required">*</span></label>
