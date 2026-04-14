@@ -38,7 +38,8 @@
 .nav-sub {
   display: none;
   position: absolute;
-  top: calc(100% + 8px);
+  top: 100%;
+  padding-top: 8px;
   left: 0;
   background: var(--white);
   border: 1px solid var(--ivory-mid);
