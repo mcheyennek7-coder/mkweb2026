@@ -1,0 +1,33 @@
+backend:
+  name: github
+  repo: mcheyennek7-coder/mkweb
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+media_folder: "images/blog"
+public_folder: "/images/blog"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "AI Ethics"
+          - "AI + Collaboration"
+          - "AI Architecture"
+          - "AI · Public Discourse"
+          - "Civic Tech"
+          - "Youth Leadership"
+          - "Personal"
+      - { label: "Excerpt", name: "excerpt", widget: "text", hint: "Short summary shown on the blog index page" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
