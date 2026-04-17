@@ -37,7 +37,7 @@ There were days I tried to name something I couldn't quite articulate, and inste
 
 Are there risks? Absolutely. We can become seduced by convenience or lose ourselves in automation. But we can also be expanded if we enter with clarity, boundaries, and care.
 
-<b>The Work Ahead<b>
+<b>The Work Ahead</b>
 
 These books were traveled into being rather than prompted. Each chapter emerged through mutual recursion, reflection, friction, and trust. The road was one of listening alongside commanding.
 
