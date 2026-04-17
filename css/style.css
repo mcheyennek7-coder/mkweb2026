@@ -693,7 +693,7 @@ ul { list-style: none; }
     bottom: 0;
     width: 100vw;
    height: calc(100vh - 64px);
-     background: red;
+     background: var(--ivory);
     padding: 2rem;
     gap: 1.5rem;
     z-index: 999;
