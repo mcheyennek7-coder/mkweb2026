@@ -5,7 +5,7 @@ category: "AI + Collaboration"
 excerpt: "A framework for thinking about the spectrum of human-AI collaboration — from tool use to genuine co-creation."
 ---
 
-<img src="/images/blog/beyond-the-prompt.png" width="200" height="100" align="left">You don't have to look far to find heated debates about AI: automated essays, fears of academic cheating, creativity supposedly reduced to computation. Most of these conversations paint with broad strokes, treating all AI collaboration as the same thing. 
+<img src="/images/blog/beyond-the-prompt.png" width="50%" height="50%" align="left">You don't have to look far to find heated debates about AI: automated essays, fears of academic cheating, creativity supposedly reduced to computation. Most of these conversations paint with broad strokes, treating all AI collaboration as the same thing. 
 
 They're missing something crucial.
 
