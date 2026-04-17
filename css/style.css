@@ -694,7 +694,7 @@ ul { list-style: none; }
     background: var(--ivory);
     padding: 2rem;
     gap: 1.5rem;
-    z-index: 99;
+    z-index: 999;
   }
   body.nav-open .nav-links a { font-size: 1.1rem; }
   .strip-grid {
