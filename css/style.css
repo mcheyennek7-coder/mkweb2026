@@ -691,7 +691,7 @@ ul { list-style: none; }
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--ivory);
+    background: red;
     padding: 2rem;
     gap: 1.5rem;
     z-index: 999;
