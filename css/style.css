@@ -691,7 +691,9 @@ ul { list-style: none; }
     left: 0;
     right: 0;
     bottom: 0;
-    background: red;
+    width: 100vw;
+   height: calc(100vh - 64px);
+     background: red;
     padding: 2rem;
     gap: 1.5rem;
     z-index: 999;
