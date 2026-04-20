@@ -629,10 +629,16 @@ ul { list-style: none; }
   flex-direction: column;
   gap: 0.4rem;
 }
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
 .footer-social a {
-  font-size: 0.82rem;
-  color: rgba(250, 248, 244, 0.55);
+  color: rgba(250,248,244,0.5);
   transition: color var(--transition);
+  display: flex;
+  align-items: center;
 }
 .footer-social a:hover { color: var(--amber-light); }
 
