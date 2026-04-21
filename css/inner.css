@@ -774,3 +774,18 @@
   .features-grid { grid-template-columns: 1fr; }
   .speaking-gallery { grid-template-columns: 1fr; }
 }
+/* ORG SOCIALS */
+.org-socials {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.org-socials a {
+  color: var(--text-faint);
+  transition: color var(--transition);
+  display: flex;
+  align-items: center;
+}
+.org-socials a:hover { color: var(--amber); }
